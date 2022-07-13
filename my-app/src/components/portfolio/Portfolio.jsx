@@ -1,10 +1,11 @@
-import React from 'react'
-import './portfolio.scss'
+/* eslint-disable require-jsdoc */
+import React from 'react';
+import './portfolio.scss';
 
 function Portfolio() {
   return (
-    <div className='portfolio'>Portfolio</div>
-  )
+    <div className='portfolio' id='portfolio'>Portfolio</div>
+  );
 }
 
-export default Portfolio
+export default Portfolio;
