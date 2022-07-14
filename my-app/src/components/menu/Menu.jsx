@@ -1,6 +1,7 @@
 /* eslint-disable require-jsdoc */
 import React from 'react';
 import './menu.scss';
+import PropTypes from 'prop-types';
 
 function Menu({menuOpen, setMenuOpen}) {
   return (
@@ -13,7 +14,7 @@ function Menu({menuOpen, setMenuOpen}) {
           <a href="#portfolio">Portfolio</a>
         </li>
         <li onClick={()=>setMenuOpen(false)}>
-          <a href="#works">Works</a>
+          <a href="#works">Certificados</a>
         </li>
         <li onClick={()=>setMenuOpen(false)}>
           <a href="#testimonials">Testimonials</a>
@@ -25,5 +26,10 @@ function Menu({menuOpen, setMenuOpen}) {
     </div>
   );
 }
+
+Menu.propTypes = {
+  menuOpen: PropTypes.bool.isRequired,
+  setMenuOpen: PropTypes.func.isRequired,
+};
 
 export default Menu;

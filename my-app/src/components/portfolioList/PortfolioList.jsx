@@ -1,6 +1,7 @@
 /* eslint-disable require-jsdoc */
 import React from 'react';
 import './portfolioList.scss';
+import PropTypes from 'prop-types';
 
 function PortfolioList({id, title, active, setSelected}) {
   return (
@@ -12,5 +13,12 @@ function PortfolioList({id, title, active, setSelected}) {
     </li>
   );
 }
+
+PortfolioList.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  active: PropTypes.bool.isRequired,
+  setSelected: PropTypes.func.isRequired,
+};
 
 export default PortfolioList;
