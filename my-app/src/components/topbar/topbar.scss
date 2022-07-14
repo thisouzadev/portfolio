@@ -1,4 +1,4 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .topbar {
   width: 100%;
@@ -9,42 +9,54 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
-
+  .tecnology {
+    display: flex;
+    width: 32%;
+    @include mobile{
+      display: none;
+    }
+  }
   .wrapper {
     padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     .left {
       display: flex;
       align-items: center;
+
       .logo {
         font-size: 40px;
         font-weight: 700;
         text-decoration: none;
-        color: inherits;
+        color: inherit;
         margin-right: 40px;
       }
+
       .itemContainer {
         display: flex;
         align-items: center;
         margin-left: 30px;
 
-        .icon {
-          font-size: 28px;
-          margin-right: 10px;
+        @include mobile{
+          display: none;
         }
 
-        span{
+        .icon {
+          font-size: 18px;
+          margin-right: 5px;
+        }
+
+        span {
           font-size: 15px;
           font-weight: 500;
         }
       }
     }
-    .right {
 
-      .hamburger{
+    .right {
+      .hamburger {
         width: 32px;
         height: 25px;
         display: flex;
@@ -66,19 +78,17 @@
   &.active {
     background-color: $mainColor;
     color: white;
-    .logo {
-      color: white;
-    }
+
     .hamburger {
       span {
-        &:first-child{
+        &:first-child {
           background-color: white;
           transform: rotate(45deg);
         }
-        &:nth-child(2){
+        &:nth-child(2) {
           opacity: 0;
         }
-        &:last-child{
+        &:last-child {
           background-color: white;
           transform: rotate(-45deg);
         }

@@ -20,7 +20,7 @@ function Menu({menuOpen, setMenuOpen}) {
           <a href="#testimonials">Depoimentos</a>
         </li>
         <li onClick={()=>setMenuOpen(false)}>
-          <a href="#contact">Contact</a>
+          <a href="#contact">Contato</a>
         </li>
       </ul>
     </div>
