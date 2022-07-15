@@ -22,7 +22,7 @@
       align-items: flex-end;
       justify-content: center;
       float: right;
-
+      block-size: auto;
       @include mobile{
         align-items: flex-start;
       }

@@ -78,7 +78,9 @@
   &.active {
     background-color: $mainColor;
     color: white;
-
+    .icon {
+      color : white;
+    }
     .hamburger {
       span {
         &:first-child {
