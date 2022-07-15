@@ -40,7 +40,7 @@ export default function Intro() {
             Desenvolvedor Web <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#portfolio">
+        <a href="#information">
           <img src="assets/down.png" alt="" />
         </a>
       </div>

@@ -37,7 +37,17 @@
     @include mobile{
       width: 100%;
     }
-
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+        a {
+          text-decoration: none;
+          color: $mainColor;
+        }
+      
+    }
     .item {
       width: 220px;
       height: 150px;

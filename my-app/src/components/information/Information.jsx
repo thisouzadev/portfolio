@@ -41,10 +41,13 @@ function Information() {
         <h2>DESENVOLVEDOR WEB</h2>
       </div>
       <p className='description'>
-        Formado na Trybe e graduado em Engenharia de Produção na UGB.
-        desenvolvedor web motivado, com 1 anos de experiência.
-        Sou apaixonado por Tecnologia, desenvolvimento e marcas que trabalhem
-        para contribuir com uma melhor interação digital.
+        Trabalho fortemente para melhorar meu conhecimento técnico, quanto
+        minhas habilidades de comunicação interpessoal, pois
+        acredito que as pessoas são a base para alcançar o sucesso.
+        Por isso, gosto
+        de trabalhar em equipe e compartilhar conhecimentos, tenho
+  a certeza de que o trabalho desenvolvido em conjunto com foco na
+   qualidade sempre irá alcançar os melhores resultados.
       </p>
       <br />
       <h1 className="signature">Thiago Souza</h1>

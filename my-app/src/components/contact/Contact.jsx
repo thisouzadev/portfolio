@@ -33,6 +33,11 @@ function Contact() {
           <textarea placeholder="Message"></textarea>
           <button type="submit">enviar</button>
         </form>
+
+        <a href="#intro">
+          <img src="assets/down.png" alt="" />
+        </a>
+
       </div>
     </div>
   );

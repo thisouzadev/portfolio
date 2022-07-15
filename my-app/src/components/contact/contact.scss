@@ -76,5 +76,24 @@
         color: green;
       }
     }
+    a {
+      
+      bottom: 10px;
+      left: 40%;
+
+      img {
+
+        width: 30px;
+        transform: rotate(180deg);
+        animation: arrowBlink 2s infinite;
+        margin-top: 10px;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
   }
 }
