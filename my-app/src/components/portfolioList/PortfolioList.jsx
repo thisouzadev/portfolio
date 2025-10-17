@@ -1,12 +1,12 @@
 /* eslint-disable require-jsdoc */
-import React from 'react';
-import './portfolioList.scss';
-import PropTypes from 'prop-types';
+import React from "react";
+import "./portfolioList.scss";
+import PropTypes from "prop-types";
 
-function PortfolioList({id, title, active, setSelected}) {
+function PortfolioList({ id, title, active, setSelected }) {
   return (
     <li
-      className={active ? 'portfolioList active' : 'portfolioList'}
+      className={active ? "portfolioList active" : "portfolioList"}
       onClick={() => setSelected(id)}
     >
       {title}

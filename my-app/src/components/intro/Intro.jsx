@@ -1,7 +1,7 @@
 /* eslint-disable require-jsdoc */
-import React, {useEffect, useRef} from 'react';
-import './intro.scss';
-import {init} from 'ityped';
+import React, { useEffect, useRef } from "react";
+import "./intro.scss";
+import { init } from "ityped";
 
 export default function Intro() {
   const textRef = useRef();
@@ -12,16 +12,17 @@ export default function Intro() {
       backDelay: 1500,
       backSpeed: 60,
       strings: [
-        'Reactjs',
-        'Nodejs',
-        'MongoDB',
-        'MySQL',
-        'Express',
-        'Sass',
-        'HTML5',
-        'CSS3',
-        'Javascript',
-        'Typescript'],
+        "Reactjs",
+        "Nodejs",
+        "MongoDB",
+        "MySQL",
+        "Express",
+        "Sass",
+        "HTML5",
+        "CSS3",
+        "Javascript",
+        "Typescript",
+      ],
     });
   }, []);
 

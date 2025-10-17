@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-import React, {useState} from 'react';
-import './works.scss';
+import React, { useState } from "react";
+import "./works.scss";
 
 function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,36 +31,34 @@ function Works() {
     //   img: 'assets/certificado3.png',
     // },
     {
-      id: '1',
-      icon: 'assets/logoTrybe.png',
-      title: 'Desenvolvimento Web',
-      desc:
-        'Fundamentos do desenvolvimento web, Desenvolvimento Front-End, Desenvolvimento Back-End, Ciência da Computção e Soft Skills.',
-      img: 'assets/certificado4.png',
-      cert: 'https://images.credential.net/embed/u5ckwmvr.png',
-      certWord: 'certificado',
+      id: "1",
+      icon: "assets/logoTrybe.png",
+      title: "Desenvolvimento Web",
+      desc: "Fundamentos do desenvolvimento web, Desenvolvimento Front-End, Desenvolvimento Back-End, Ciência da Computção e Soft Skills.",
+      img: "assets/certificado4.png",
+      cert: "https://images.credential.net/embed/u5ckwmvr.png",
+      certWord: "certificado",
     },
     {
-      id: '2',
-      icon: 'assets/ugb.jpeg',
-      title: 'Engenharia de Produção',
-      desc:
-        ' Planeja, projeta e gerencia sistemas organizacionais que envolvem recursos humanos, materiais, tecnológicos, financeiros e ambientais. ',
-      img: 'assets/ugbDiploma.jpg',
+      id: "2",
+      icon: "assets/ugb.jpeg",
+      title: "Engenharia de Produção",
+      desc: " Planeja, projeta e gerencia sistemas organizacionais que envolvem recursos humanos, materiais, tecnológicos, financeiros e ambientais. ",
+      img: "assets/ugbDiploma.jpg",
     },
   ];
 
   const handleClick = (way) => {
-    way === 'left' ?
-      setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 1) :
-      setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
+    way === "left"
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 1)
+      : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
 
   return (
     <div className="works" id="works">
       <div
         className="slider"
-        style={{transform: `translateX(-${currentSlide * 100}vw)`}}
+        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
           <div key={d.id} className="container">
@@ -68,19 +66,30 @@ function Works() {
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
-                    <img src={d.icon} alt="" style={{blockSize: 'auto'}} />
+                    <img src={d.icon} alt="" style={{ blockSize: "auto" }} />
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <a className='animate-charcter' href={d.cert} target="_blank" rel="noopener noreferrer">{d.certWord}</a>
-                  <a className='animate-charcter' href="https://www.linkedin.com/in/thisouzadev/" target="_blank" rel="noopener noreferrer">mais informações</a>
+                  <a
+                    className="animate-charcter"
+                    href={d.cert}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {d.certWord}
+                  </a>
+                  <a
+                    className="animate-charcter"
+                    href="https://www.linkedin.com/in/thisouzadev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    mais informações
+                  </a>
                 </div>
               </div>
               <div className="right">
-                <img
-                  src={d.img}
-                  alt=""
-                />
+                <img src={d.img} alt="" />
               </div>
             </div>
           </div>
@@ -90,7 +99,7 @@ function Works() {
         src="assets/arrow.png"
         className="arrow left"
         alt=""
-        onClick={() => handleClick('left')}
+        onClick={() => handleClick("left")}
       />
       <img
         src="assets/arrow.png"

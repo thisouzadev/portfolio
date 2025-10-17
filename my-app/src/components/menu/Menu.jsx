@@ -1,28 +1,28 @@
 /* eslint-disable require-jsdoc */
-import React from 'react';
-import './menu.scss';
-import PropTypes from 'prop-types';
+import React from "react";
+import "./menu.scss";
+import PropTypes from "prop-types";
 
-function Menu({menuOpen, setMenuOpen}) {
+function Menu({ menuOpen, setMenuOpen }) {
   return (
-    <div className={'menu '+(menuOpen && 'active')}>
+    <div className={"menu " + (menuOpen && "active")}>
       <ul>
-        <li onClick={()=>setMenuOpen(false)}>
+        <li onClick={() => setMenuOpen(false)}>
           <a href="#intro">Home</a>
         </li>
-        <li onClick={()=>setMenuOpen(false)}>
+        <li onClick={() => setMenuOpen(false)}>
           <a href="#information">Perfil</a>
         </li>
-        <li onClick={()=>setMenuOpen(false)}>
+        <li onClick={() => setMenuOpen(false)}>
           <a href="#portfolio">Portfolio</a>
         </li>
-        <li onClick={()=>setMenuOpen(false)}>
+        <li onClick={() => setMenuOpen(false)}>
           <a href="#works">Certificados</a>
         </li>
-        <li onClick={()=>setMenuOpen(false)}>
+        <li onClick={() => setMenuOpen(false)}>
           <a href="#testimonials">Depoimentos</a>
         </li>
-        <li onClick={()=>setMenuOpen(false)}>
+        <li onClick={() => setMenuOpen(false)}>
           <a href="#contact">Contato</a>
         </li>
       </ul>
